@@ -1,12 +1,11 @@
 import css from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
-export const Statistitcs = ({ title, stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
+    <section className={css.statistics}>
       {title && <h2 className={css.title}>{title}</h2>}
-      {/* <h2 class="title">Upload stats</h2> */}
-      <ul className="stat-list">
+      <ul className={css.statList}>
         {stats.map(({ id, label, percentage }) => {
           return (
             <li className={css.item} key={id}>
@@ -20,7 +19,7 @@ export const Statistitcs = ({ title, stats }) => {
   );
 };
 
-Statistitcs.PropTypes = {
+Statistics.prototype = {
   title: PropTypes.string,
   stats: PropTypes.arrayOf(
     PropTypes.exact({

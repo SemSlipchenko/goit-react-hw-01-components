@@ -1,0 +1,32 @@
+.item {
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 5px 2px rgba(150, 150, 150, 0.5);
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.status {
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.status__true {
+    background-color: #74ee7e;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.status__false {
+    background-color:#f24343;
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}

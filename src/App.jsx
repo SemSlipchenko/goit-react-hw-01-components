@@ -1,11 +1,14 @@
+import css from 'App.module.css';
 import { Profile } from './components/Profile/Profile';
-import { Statistitcs } from './components/Statistics/Statistics';
+import { Statistics } from './components/Statistics/Statistics';
+import { FriendList } from './components/FriendList/FriendList';
 import user from './data/user.json';
 import data from './data/data.json';
+import friends from './data/friends.json';
 
 export const App = () => {
   return (
-    <div>
+    <div className={css.container}>
       <Profile
         avatar={user.avatar}
         username={user.username}
@@ -15,7 +18,8 @@ export const App = () => {
         views={user.stats.views}
         likes={user.stats.likes}
       />
-      <Statistitcs title="Upload stats" stats={data} />
+      <Statistics title="Upload stats" stats={data} />
+      <FriendList friends={friends} />
     </div>
   );
 };
