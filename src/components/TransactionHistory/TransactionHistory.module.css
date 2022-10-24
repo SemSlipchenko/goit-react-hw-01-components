@@ -1,0 +1,15 @@
+.transactionHistory {
+    max-width: 500px;
+    min-width: 350px;
+    border: 1px solid grey;
+}
+
+.tableHead {
+    background-color: aqua;
+}
+.tableRow {
+    text-align: center;
+}
+.tableData {
+    border: 1px solid grey;
+}
